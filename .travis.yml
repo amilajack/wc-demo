@@ -14,6 +14,5 @@ matrix:
     - rust: beta
     - os: windows
 test:
-  - npm i -g neon-cli
-  - neon build
-  - neon build --release
+  - npm install
+  - node -e 'require("./")'
